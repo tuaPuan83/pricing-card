@@ -8,18 +8,21 @@
 }
 
 body {
-  background-color: #f7fafc;
-  min-height: 100vh;
+  /* background-color: #f7fafc;
+  
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem; */
   padding: 1rem;
+  min-height: 100vh;
+  margin: auto;
 }
 
 /* container style */
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1040px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -29,9 +32,22 @@ body {
   padding: 30px 15px;
 }
 
-/* header style */
-.header {
+header style .header {
   text-align: center;
+}
+
+.header__heading {
+  color: #2d3748;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header__subheading {
+  color: #2d3748;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 3.75rem;
 }
 
 .details {
@@ -41,20 +57,106 @@ body {
   justify-content: space-between;
 }
 
-.details .detail__right {
-  display: flex;
+.detail__left-content {
+  color: #4a5568;
 }
 
-.details .detail__right .plan,
-.details .detail__right .currency {
+.detail__left-link {
+  color: #2b6cb0;
+}
+
+.detail__right {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.detail__right-plan,
+.detail__right-currency {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.detail__right-plan select,
+.detail__right-currency select {
+  background-color: #cbd5e0;
+  border-radius: 100px;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.details .detail__right .detail__right-plan,
+.details .detail__right .detail__right-currency {
   display: flex;
 }
 
 hr {
   width: 100%;
+  margin: 2.5rem 0 5.6rem 0;
 }
 
 .card__wrapper {
   width: 100%;
   display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  width: 33.33%;
+}
+
+.card__container {
+  padding: 30px 34px 45px 25px;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__header h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.card__details {
+  margin: 2.5rem 0;
+}
+
+.card__details-price {
+  text-align: center;
+  font-size: 3.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.card__feature ul {
+  padding-left: 2.1875rem;
+}
+
+.card__feature ul li {
+  margin-bottom: 2.1875rem;
+  font-weight: bold;
+}
+
+.card__feature ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.card__feature ul li::marker {
+  color: #cbd5e0;
+}
+
+.btn {
+  width: 100%;
+  background-color: #edf2f7;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
