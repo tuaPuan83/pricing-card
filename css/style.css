@@ -9,7 +9,7 @@
 
 body {
   background-color: #f7fafc;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +57,6 @@ header style .header {
   align-items: center;
   justify-content: space-between;
 }
-
 
 .detail__left-content {
   color: #4a5568;
@@ -109,8 +108,12 @@ hr {
 
 .card {
   background-color: #fff;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   flex-basis: 33.33%;
+}
+
+.card.card__mb {
+  margin-bottom: 4rem;
 }
 
 .card__container {
@@ -165,6 +168,10 @@ hr {
   text-transform: uppercase;
 }
 
+.btn.btn__pink {
+  background-color: #ea0774;
+}
+
 @media screen and (max-width: 768px) {
   .card__wrapper {
     flex-wrap: wrap;
@@ -172,6 +179,10 @@ hr {
 
   .card {
     flex-basis: 48%;
+  }
+
+  .card.card__mb {
+    margin-bottom: 0;
   }
 
   .details {
@@ -189,7 +200,7 @@ hr {
   }
 }
 
-@media screen and (max-width:378px) {
+@media screen and (max-width: 378px) {
   .detail__right {
     width: 100%;
     flex-direction: column;
